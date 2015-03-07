@@ -1,0 +1,56 @@
+Title:  ISO8601 White List
+Author: Ton van Lankveld
+Date:   2015 March 7
+
+
+TARGET
+To find the most effective order, for the characters in the ISO8601 format.
+
+
+USED ISO8601 FORMAT
+yyyy-mm-ddThh:mm:ss
+
+
+FIRST THOUGHTS
+Change "yyyy" to "20yy". The first 2 numbers will not change in the next 84 years.
+The "-" and ":" characters are both two times present in a valid ISO8601 string.
+The "T" character is one time present in a valid ISO8601 string.
+
+
+NUMBER RANGES
+Used ISO8601 format vertical:
+2
+0
+0-9
+0-9
+-
+0-1
+1-9
+-
+0-3
+1-9
+T
+0-2
+0-9
+:
+0-5
+0-9
+:
+0-5
+0-9
+
+
+MAXIMAL OCCURENSES OF A NUMBER
+0 -> 10+1
+1 -> 12
+2 -> 11+1
+3 -> 10
+4 -> 9
+5 -> 9
+6 -> 7
+7 -> 7
+8 -> 7
+9 -> 7
+
+FOUND WHITE LIST SEQUENCE
+"1203456789-:T"
