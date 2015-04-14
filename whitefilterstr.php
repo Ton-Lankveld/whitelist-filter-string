@@ -1,3 +1,5 @@
+<?php
+
 /**
  * Filter a string and allow only characters in the white list string
  *
@@ -13,18 +15,14 @@
     }
   $inpStrLen = strlen($inpStr);
   $WLstrLen = strlen($whiteListStr);
-
+  # Filter the input string with the whitelist
   $i = 0;
   while ($i < $inpStrLen) {
-    $j = 0;
-    while ($j < $WLstrLen) {
-      if ($inpStr{$i} == $whiteListStr{$j}) {
-        $strClean = $strClean.$inpStr{$i};
-        break;
-      }
-    $j++;
+    if (strpos($whiteListStr, $inpStr{$i}, 0) !== false) {
+      $strClean = $strClean.$inpStr{$i};
     }
   $i++;
   }
   return $strClean;
 }
+ ?>
