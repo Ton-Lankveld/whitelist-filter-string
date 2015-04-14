@@ -1,0 +1,30 @@
+Title:  Whitelist strings for ISO8601 Date-time standard
+Author: Ton van Lankveld
+Date:   2015 April 14
+
+
+ABOUT ISO8601
+https://en.wikipedia.org/wiki/ISO_8601
+
+
+LOCAL TIME (yyyy-mm-ddThh:mm:ss)
+"1203456789-:T"
+
+
+UTC (yyyy-mm-ddThh:mm:ssZ)
+"1203456789-:TZ"
+
+UTC AND TIME ZONE (yyyy-mm-ddThh:mm:ss±hh:mm)
+"1203456789-:T+"
+
+
+ORDINAL DATE (yyyy-ddd)
+"1203456789-"
+
+
+WEEK DATE (yyyy-Www or yyyy-Www-d)
+"1203456789-W"
+
+
+DURATION (PnYnMnDTnHnMnS or PnYnWnDTnHnMnS)
+"0123456789MPYWDTHS"
