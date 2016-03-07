@@ -14,7 +14,6 @@
      return $strClean;
     }
   $inpStrLen = strlen($inpStr);
-  $WLstrLen = strlen($whiteListStr);
   # Filter the input string with the whitelist
   $i = 0;
   while ($i < $inpStrLen) {
