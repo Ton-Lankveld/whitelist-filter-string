@@ -1,8 +1,14 @@
-# whitelist-filter-string
-Filter a string with a characters white list
+# Whitelist Filter for Test Strings
+Filter a text string with a list of allowed (white) characters.
 
-I coundn't find a PHP function to filter a string on allowed characters (whitelist), so I made my own little function.
-If anyone can show me a better way, please do.
+## Description
+An **input** text string is compared with the characters in a **filter** text string.
+Only the allowed characters are transfered to the **output** test string.
+
+Availible for:
+- JavaScript
+- PHP
+- Python
 
 ## Install
 Copy the function in your code.
