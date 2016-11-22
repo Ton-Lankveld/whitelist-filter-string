@@ -1,11 +1,9 @@
-/**
-* @function
-* @name whiteFilterStr
-* @description Filter a string and allow only characters in the white list string
-* @param {string} inputStr - String to be sanatized
-* @param {string} whiteListStr - Allowed characters
-* @return {string} cleanStr - Sanatized string. If fault then empty
-*/
+// @function
+// @name whiteFilterStr
+// @description Filter a string and allow only characters in the white list string
+// @param {string} inputStr - String to be sanatized
+// @param {string} whiteListStr - Allowed characters
+// @return {string} cleanStr - Sanatized string. If fault then empty
 function whiteFilterStr(inputStr, whiteListStr) {
     "use strict";
     var cleanStr = "";
@@ -16,7 +14,7 @@ function whiteFilterStr(inputStr, whiteListStr) {
         return cleanStr;
     }
     inputStrLength = inputStr.length;
-    // Filter the input string with the whitelist
+    // Filter the input string with the white list
     var i = 0;
     while (i < inputStrLength) {
         character = inputStr.charAt(i);
