@@ -1,9 +1,9 @@
 // @function
 // @name whiteFilterStr
 // @description Filter a string and allow only characters in the white list string
-// @param {string} inputStr - String to be sanatized
+// @param {string} inputStr - String to be sanitized
 // @param {string} whiteListStr - Allowed characters
-// @return {string} cleanStr - Sanatized string. If fault then empty
+// @return {string} cleanStr - Sanitized string. If fault then empty
 function whiteFilterStr(inputStr, whiteListStr) {
     "use strict";
     var cleanStr = "";
